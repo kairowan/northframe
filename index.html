@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northframe</title>
+    <meta
+      name="description"
+      content="Northframe is a small software workshop for Android, Kotlin, tools, and practical experiments."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Northframe</p>
+          <h1>A quiet place for code, tools, and working software.</h1>
+          <p class="lede">
+            Northframe collects practical experiments around Android, Kotlin,
+            infrastructure, and developer tooling. It is a compact public home
+            for projects that are meant to be useful before they are flashy.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/kairowan"
+              >GitHub Profile</a
+            >
+            <a class="button secondary" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <aside class="hero-note">
+          <p class="note-label">Focus</p>
+          <ul>
+            <li>Android architecture</li>
+            <li>Kotlin libraries</li>
+            <li>Developer tooling</li>
+            <li>Small, durable systems</li>
+          </ul>
+        </aside>
+      </header>
+
+      <main>
+        <section class="section intro-grid">
+          <article class="intro-card">
+            <p class="section-kicker">Approach</p>
+            <h2>Build things that survive real use.</h2>
+            <p>
+              The projects featured here lean toward maintainable structure,
+              clear APIs, and straightforward implementation. The goal is
+              simple: make software that feels reliable under pressure.
+            </p>
+          </article>
+          <article class="quote-card">
+            <p>
+              "Useful beats ornamental. Shipping beats polishing forever."
+            </p>
+          </article>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p class="section-kicker">Selected Work</p>
+            <h2>Recent open-source projects</h2>
+          </div>
+          <div class="project-grid">
+            <a class="project-card" href="https://github.com/kairowan/AndroidJetpack">
+              <span class="project-tag">Android</span>
+              <h3>AndroidJetpack</h3>
+              <p>
+                A modular Android architecture project built with Kotlin,
+                coroutines, Retrofit, and Jetpack.
+              </p>
+            </a>
+            <a class="project-card" href="https://github.com/kairowan/ComposeListKit">
+              <span class="project-tag">Compose</span>
+              <h3>ComposeListKit</h3>
+              <p>
+                A flexible list toolkit for Jetpack Compose with loading,
+                grouping, drag, swipe, header, and footer support.
+              </p>
+            </a>
+            <a class="project-card" href="https://github.com/kairowan/KInspector">
+              <span class="project-tag">Tooling</span>
+              <h3>KInspector</h3>
+              <p>
+                Engineering health checks for Kotlin and Android multi-module
+                codebases.
+              </p>
+            </a>
+            <a class="project-card" href="https://github.com/kairowan/Aura">
+              <span class="project-tag">Desktop</span>
+              <h3>Aura</h3>
+              <p>
+                A native desktop AI client focused on performance, usability,
+                and flexible provider support.
+              </p>
+            </a>
+            <a class="project-card" href="https://github.com/kairowan/KMP-Swift-Export-ToolKIt">
+              <span class="project-tag">KMP</span>
+              <h3>KMP Swift Export Toolkit</h3>
+              <p>
+                A Gradle plugin for publishing Kotlin Multiplatform XCFrameworks
+                to Swift Package Manager.
+              </p>
+            </a>
+            <a class="project-card" href="https://github.com/kairowan/FlowDownload">
+              <span class="project-tag">Library</span>
+              <h3>FlowDownload</h3>
+              <p>
+                A Kotlin download library powered by coroutines and Flow, with
+                foreground and WorkManager-backed background execution.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section notes-grid">
+          <article class="note-panel">
+            <p class="section-kicker">What lives here</p>
+            <h2>Software notes with a bias toward implementation</h2>
+            <p>
+              Expect experiments, framework work, and project links that are
+              close to the code. The scope is intentionally narrow and hands-on.
+            </p>
+          </article>
+          <article class="contact-panel">
+            <p class="section-kicker">Links</p>
+            <ul class="link-list">
+              <li><a href="https://github.com/kairowan">GitHub</a></li>
+              <li><a href="https://github.com/gaohaonan-has">Archive Profile</a></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Northframe</p>
+        <p id="year-line">Built for software notes and public projects.</p>
+      </footer>
+    </div>
+    <script>
+      const yearLine = document.getElementById("year-line");
+      yearLine.textContent =
+        "Built for software notes and public projects. " +
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
